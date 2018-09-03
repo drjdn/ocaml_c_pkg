@@ -17,13 +17,15 @@ Requirements
 ------------
 
 The OCaml runtime used is from OCaml version 4.06.1 and so you need to have this
-version of the compiler installed.  You will also need to have a C compiler and
-the termcap library installed.
+version of the compiler on your system.  You will also need to have a C compiler
+and the termcap library installed.  If you are using windows you will need
+[MinGW](http://mingw.org), [Cygwin](https://cygwin.com/) or some other tool that
+provides a POSIX API.
 
 Building
 --------
 
-Creating the package by changing into the repo directory and running make:
+Generate the C package by changing into the repo directory and running make:
 
 ```bash
 $ cd ocaml_c_pkg
@@ -31,16 +33,16 @@ $ make
 ```
 
 this will create a subdirectory called `pkg/` with the generated C code,
-`main.c` and Makefile.  To build the created package:
+`main.c` and `Makefile`.  To build the package:
 
 ```bash
 $ cd pkg
 $ make
 ```
 
-If the package doesn't build it likely means that the OCaml bytecode runtime
-isn't supported on your particular platform.  In theory this should work on any
-system with a functioning C compiler.
+If the build fails it likely means that the OCaml bytecode runtime isn't
+supported on your particular platform.  In theory this should work on any system
+with a functioning C compiler.
 
 License
 -------
