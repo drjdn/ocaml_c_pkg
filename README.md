@@ -33,7 +33,7 @@ $ make
 ```
 
 this will create a subdirectory called `pkg/` with the generated C code,
-`main.c` and `Makefile`.  To build the package:
+`main.c`, OCaml bytecode runtime source and `Makefile`.  To build the package:
 
 ```bash
 $ cd pkg
