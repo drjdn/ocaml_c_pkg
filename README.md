@@ -13,7 +13,7 @@ This repository illustrates how to create a portable C package from
 Requirements
 ------------
 
-The OCaml runtime used is from OCaml version 4.06.1 and so you need to have this
+The OCaml runtime used is from OCaml version 4.07.1 and so you need to have this
 version of the compiler on your system.  You will also need to have a C compiler
 and the termcap library installed.  If you are using windows you will need
 [MinGW](http://mingw.org), [Cygwin](https://cygwin.com/) or some other tool that
