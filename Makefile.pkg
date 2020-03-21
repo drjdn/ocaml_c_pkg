@@ -1,13 +1,13 @@
 .PHONY: build clean all
 
 build:
-	cd ocaml-4.06.1-runtime; ./configure; make runtime
-	cp ocaml-4.06.1-runtime/byterun/libcamlrun.a .
-	cc -fPIC -Wall -I./ocaml-4.06.1-runtime/byterun -ltermcap -lm -ldl -o run main.c embed_out.c libcamlrun.a
+	cd ocaml-4.07.1-runtime; ./configure; make runtime
+	cp ocaml-4.07.1-runtime/byterun/libcamlrun.a .
+	cc -fPIC -Wall -I./ocaml-4.07.1-runtime/byterun -ltermcap -lm -ldl -o run main.c embed_out.c libcamlrun.a
 
 clean:
 	rm -rf run libcamlrun.a
-	cd ocaml-4.06.1-runtime/byterun; make clean
-	cd ocaml-4.06.1-runtime/stdlib; make clean
+	cd ocaml-4.07.1-runtime/byterun; make clean
+	cd ocaml-4.07.1-runtime/stdlib; make clean
 
 all: build
