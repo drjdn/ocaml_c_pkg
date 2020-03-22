@@ -1,5 +1,5 @@
-Building a portable OCaml bytecode embedded in C project
-=========================================================
+Building portable OCaml bytecode embedded in a C project
+========================================================
 
 This repository illustrates how to create a portable C package from
  [OCaml](https://ocaml.org/) source code.  The OCaml code used was taken
