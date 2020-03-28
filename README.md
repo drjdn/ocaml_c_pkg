@@ -4,7 +4,7 @@ Building portable OCaml bytecode embedded in a C project
 This repository illustrates how to create a portable C package from
  [OCaml](https://ocaml.org/) source code.  The OCaml code used was taken
  directly from the book [Real World OCaml](https://realworldocaml.org/).  My
- only contribution here was to extract the OCaml bytecode runtime which is ~5.2
+ only contribution here was to extract the OCaml bytecode runtime which is ~5.3
  MB from the OCaml compiler [source](https://github.com/ocaml/ocaml) and create
  the required Makefiles.  I did this to make things as simple to follow as
  possible while demonstrating how you would go about doing this in practice.
@@ -13,7 +13,7 @@ This repository illustrates how to create a portable C package from
 Requirements
 ------------
 
-The OCaml runtime used is from OCaml version 4.09.1 and so you need to have this
+The OCaml runtime used is from OCaml version 4.10.0 and so you need to have this
 version of the compiler on your system.  You will also need to have a C compiler
 and the termcap library installed.  If you are using windows you will need
 [MinGW](http://mingw.org), [Cygwin](https://cygwin.com/) or some other tool that
