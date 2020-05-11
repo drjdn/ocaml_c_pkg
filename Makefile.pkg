@@ -5,7 +5,7 @@ build:
 	cp ocaml-4.10.0-runtime/runtime/libcamlrun.a .
 	$(MAKE)  -C ocaml-4.10.0-runtime/unix
 	cp ocaml-4.10.0-runtime/unix/libunix.a .
-	cc -fPIC -Wall -I./ocaml-4.10.0-runtime/runtime -o run main.c embed_out.c libcamlrun.a libunix.a -ltermcap -lm -ldl
+	cc -fPIC -Wall -I./ocaml-4.10.0-runtime/runtime -o run main.c embed_out.c libcamlrun.a libunix.a -lm -ldl
 
 clean:
 	rm -rf run libcamlrun.a libunix.a
