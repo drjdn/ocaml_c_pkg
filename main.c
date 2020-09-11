@@ -4,9 +4,7 @@
 #include <caml/memory.h>
 #include <caml/callback.h>
 
-int 
-main (int argc, char **argv)
-{
+int main(int argc, char **argv) {
   printf("Before calling OCaml\n");
   fflush(stdout);
   caml_startup (argv);
