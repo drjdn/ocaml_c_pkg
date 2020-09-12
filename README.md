@@ -15,7 +15,7 @@ This repository illustrates how to create a portable C package from
 Requirements
 ------------
 
-The OCaml runtime and unix library is from OCaml version 4.10.1 and so you need
+The OCaml runtime and unix library is from OCaml version 4.11.1 and so you need
 to have this version of the compiler on your system and a C compiler.  If you
 are using windows you will need [MinGW](http://mingw.org),
 [Cygwin](https://cygwin.com/) or some other tool that provides a POSIX API.
