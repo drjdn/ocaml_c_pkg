@@ -1,17 +1,17 @@
 .PHONY: build clean all
 
 build:
-	cd ocaml-4.13.1-runtime; ./configure; make runtime
-	cp ocaml-4.13.1-runtime/runtime/libcamlrun.a .
-	$(MAKE)  -C ocaml-4.13.1-runtime/unix
-	cp ocaml-4.13.1-runtime/unix/libunix.a .
-	cc -fPIC -Wall -I./ocaml-4.13.1-runtime/runtime -o run main.c embed_out.c libcamlrun.a libunix.a -lm -ldl
+	cd ocaml-4.14.0-runtime; ./configure; make runtime
+	cp ocaml-4.14.0-runtime/runtime/libcamlrun.a .
+	$(MAKE)  -C ocaml-4.14.0-runtime/unix
+	cp ocaml-4.14.0-runtime/unix/libunix.a .
+	cc -fPIC -Wall -I./ocaml-4.14.0-runtime/runtime -o run main.c embed_out.c libcamlrun.a libunix.a -lm -ldl
 
 clean:
 	rm -rf run libcamlrun.a libunix.a
-	$(MAKE) -C ocaml-4.13.1-runtime/runtime clean
-	$(MAKE) -C ocaml-4.13.1-runtime/stdlib clean
-	$(MAKE) -C ocaml-4.13.1-runtime/tools clean
-	$(MAKE) -C ocaml-4.13.1-runtime/unix clean
+	$(MAKE) -C ocaml-4.14.0-runtime/runtime clean
+	$(MAKE) -C ocaml-4.14.0-runtime/stdlib clean
+	$(MAKE) -C ocaml-4.14.0-runtime/tools clean
+	$(MAKE) -C ocaml-4.14.0-runtime/unix clean
 
 all: build
